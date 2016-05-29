@@ -1,25 +1,53 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="COMP2007_Assignment1_DArceyTaylor.Navbar" %>
-<nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="Default.aspx"><i class="fa fa-fort-awesome fa-lg"></i> Brand</a>
+ <!-- Header -->
+    <div id="header">
+
+        <div class="top">
+
+            <!-- My Avatar -->
+            <div id="logo">
+                <span class="image avatar48"><img src="Assets/avatar.jpg" alt="" /></span>
+                <h1 id="title">D'Arcey Taylor</h1>
+                <p>Computer Programming
+                    <br />Student</p>
+            </div>
+
+            <!-- Nav Bar -->
+            <nav id="nav" role="navigation">
+
+                <ul>
+                    <li id="Home" runat="server"><a href="Default.aspx" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
+                    <li id="About" runat="server"><a href="About.aspx" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                    <li id="Projects" runat="server"><a href="Projects.aspx" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
+                    <li id="Contact" runat="server"><a href="Contact.aspx" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                </ul>
+            </nav>
+
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <div class="bottom">
             
-            <ul class="nav navbar-nav navbar-right">
-                <li id="Home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li id="Contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact</a></li>
+                    <div class="panel-body">
+                        <address>
+                            123 Georgian Drive<br>
+                            Barrie, Ont L9L 9L9<br>
+                            <abbr title="Phone">P:</abbr>
+                            (123) 456-7890
+                        </address>
+                    </div>
+                
+            <!-- Social Icons and Links-->
+            <ul class="icons">
+                <li><a href="https://twitter.com/DArceyTaylor?lang=en" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="https://www.facebook.com/darcey.taylor.7" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="https://www.linkedin.com/in/d-arcey-taylor-829789102" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCRdyitALJPVEkr18ApTqW3g" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+                <li><a href="https://github.com/DArceyTaylor" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="Contact.aspx" id="contact-link" class="icon fa-envelope"><span class="label">Email</span></a></li>
             </ul>
+
         </div>
-        <!-- /.navbar-collapse -->
+
     </div>
-    <!-- /.container-fluid -->
-</nav>
+</div>
+

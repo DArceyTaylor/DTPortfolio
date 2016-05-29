@@ -33,6 +33,12 @@ namespace COMP2007_Assignment1_DArceyTaylor
                 case "Home Page":
                     Home.Attributes.Add("class", "active");
                     break;
+                case "About Page":
+                    About.Attributes.Add("class", "active");
+                    break;
+                case "Projects Page":
+                    Projects.Attributes.Add("class", "active");
+                    break;
                 case "Contact":
                     Contact.Attributes.Add("class", "active");
                     break;

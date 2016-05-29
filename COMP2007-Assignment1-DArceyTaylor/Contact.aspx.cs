@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Text;
+using System.Net.Mail;
+using System.Net.Mime;
 
 namespace COMP2007_Assignment1_DArceyTaylor
 {
@@ -17,7 +20,37 @@ namespace COMP2007_Assignment1_DArceyTaylor
         protected void SendButton_Click(object sender, EventArgs e)
         {
             //this is a placeholder for working code that sends email
-            Response.Redirect("Default.aspx");
+            //Response.Redirect("Default.aspx");
+
+            try
+            {
+                string fromName = FirstNameTextBox.Text.ToString() + " " + LastNameTextBox.Text.ToString();
+                MailMessage mailMsg = new MailMessage();
+
+                // To
+                mailMsg.To.Add(new MailAddress("darceytaylor05@gmail.com", "D'Arcey Taylor"));
+
+                // From
+                mailMsg.From = new MailAddress(EmailTextBox.Text.ToString(), fromName);
+
+                // Subject and multipart/alternative Body
+                mailMsg.Subject = "Portfolio Site Mail From" + fromName;
+                string text = MessageTextBox.Text.ToString();
+                //string html = @"<p>html body</p>";
+                mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+                //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+
+                // Init SmtpClient and send
+                SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("darceytaylor05@gmail.com", "Darc66209");
+                smtpClient.Credentials = credentials;
+
+                smtpClient.Send(mailMsg);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
