@@ -36,13 +36,13 @@ namespace COMP2007_Assignment1_DArceyTaylor
                 // Subject and multipart/alternative Body
                 mailMsg.Subject = "Portfolio Site Mail From" + fromName;
                 string text = MessageTextBox.Text.ToString();
-                //string html = @"<p>html body</p>";
+                string html = @"<p>html body</p>";
                 mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
-                //mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
+                mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
                 // Init SmtpClient and send
                 SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("darceytaylor05@gmail.com", "Darc66209");
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("email", "password");
                 smtpClient.Credentials = credentials;
 
                 smtpClient.Send(mailMsg);
