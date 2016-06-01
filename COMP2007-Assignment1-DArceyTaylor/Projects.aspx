@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Projects" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Projects.aspx.cs" Inherits="COMP2007_Assignment1_DArceyTaylor.Projects" %>
 
+<%--/**
+ * @author: D'Arcey Taylor
+ * @date: May 27, 2016
+ * @version: 0.0.2 
+**/--%>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <section id="projects" class="two">
         <div class="row">

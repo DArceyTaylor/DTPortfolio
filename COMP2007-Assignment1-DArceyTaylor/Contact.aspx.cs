@@ -8,6 +8,12 @@ using System.Text;
 using System.Net.Mail;
 using System.Net.Mime;
 
+/**
+ * @author: D'Arcey Taylor
+ * @date: May 27, 2016
+ * @version: 0.0.2 added SendButton_Click method
+**/
+
 namespace COMP2007_Assignment1_DArceyTaylor
 {
     public partial class Contact : System.Web.UI.Page
@@ -16,11 +22,20 @@ namespace COMP2007_Assignment1_DArceyTaylor
         {
 
         }
-
+        /**
+         * This method takes the info from the contact form fields
+         * in order to send an email
+         * 
+         * at this time does not work with sendgrid
+         * 
+         * @private
+         * @method SetActivePage
+         * @return {void}
+        **/
         protected void SendButton_Click(object sender, EventArgs e)
         {
             //this is a placeholder for working code that sends email
-            //Response.Redirect("Default.aspx");
+            Response.Redirect("Default.aspx");
 
             try
             {

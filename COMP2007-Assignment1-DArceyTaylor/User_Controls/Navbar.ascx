@@ -1,5 +1,12 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Navbar.ascx.cs" Inherits="COMP2007_Assignment1_DArceyTaylor.Navbar" %>
- <!-- Header -->
+ 
+<%--/**
+ * @author: D'Arcey Taylor
+ * @date: May 27, 2016
+ * @version: 0.0.2 
+**/--%>
+
+<!-- Header -->
     <div id="header">
 
         <div class="top">
@@ -29,10 +36,10 @@
             
                     <div class="panel-body">
                         <address>
-                            123 Georgian Drive<br>
-                            Barrie, Ont L9L 9L9<br>
+                            2644 Lawrence Ave.<br>
+                            Innisfil, Ont L9S 1C9<br>
                             <abbr title="Phone">P:</abbr>
-                            (123) 456-7890
+                            (705) 241-5848
                         </address>
                     </div>
                 
@@ -49,5 +56,5 @@
         </div>
 
     </div>
-</div>
+
 

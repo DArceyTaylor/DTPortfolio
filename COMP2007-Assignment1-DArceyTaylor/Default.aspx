@@ -1,5 +1,11 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="COMP2007_Assignment1_DArceyTaylor.Default" %>
 
+<%--/**
+ * @author: D'Arcey Taylor
+ * @date: May 27, 2016
+ * @version: 0.0.2 
+**/--%>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="col-md-offset-1">
         <bs3:Jumbotron runat="server" ID="Jumbotron1">
