@@ -21,8 +21,9 @@
 
             <p>
                 I am currently enrolled in the Computer Programming program at Georgian College, where I have learned to
-                    use many different coding languages such as HTML5, CSS, PHP, Java, Arduino and many others. In my spare
-                    time I enjoy playing video games, guitar, spending time with my friends, and playing with my dogs. But
+                    use many different coding languages such as HTML5, CSS, PHP, Java, and Javascript. I have knowledge in building websites using meanstack and ASP.net,
+                    and I am knowledgeable in the aspects of the scrum framework to working in a group environment.
+                    In my spare time I enjoy playing video games, guitar, spending time with my friends, and playing with my dogs, but
                     when it comes to my school work I am very passionate and take it very seriously.
             </p>
 
