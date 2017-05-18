@@ -58,7 +58,7 @@
                         </header>
                     </article>
                     <article class="item">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IVEhhrknD9A" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/IVEhhrknD9A" frameborder="0" allowfullscreen></iframe>
                         <header>
                             <h3>An Ionic Dungeons & Dragons App<br />
                                 Made with Ionic 2 for Android</h3>
