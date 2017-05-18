@@ -58,11 +58,10 @@
                         </header>
                     </article>
                     <article class="item">
-                        <a href="http://gc200302660.computerstudi.es/Web%20and%20Internet%20Fundamentals/Project1/index.html" class="image fit">
-                            <img src="Assets/site3.jpg" alt="" /></a>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IVEhhrknD9A" frameborder="0" allowfullscreen></iframe>
                         <header>
-                            <h3>Sample Website using HTML & CSS<br />
-                                Includes basic PayPal page</h3>
+                            <h3>An Ionic Dungeons & Dragons App<br />
+                                Made with Ionic 2 for Android</h3>
                         </header>
                     </article>
                 </div>
