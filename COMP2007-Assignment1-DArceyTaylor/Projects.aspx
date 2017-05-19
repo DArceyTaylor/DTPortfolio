@@ -42,11 +42,11 @@
                         </header>
                     </article>
                     <article class="item">
-                        <a href="http://gc200302660.computerstudi.es/Virtual%20Comm/home.php" class="image fit">
-                            <img src="Assets/site2.jpg" alt="" /></a>
+                        <a href="http://breamteam.azurewebsites.net/" class="image fit">
+                            <img src="Assets/OzElectric.png" alt="" /></a>
                         <header>
-                            <h3>Sample Website in PHP<br />
-                                About Semester 2 of my Program</h3>
+                            <h3>Sample Employee Site Using MVC<br />
+                                Site I worked on for Oz Electric</h3>
                         </header>
                     </article>
                 </div>
